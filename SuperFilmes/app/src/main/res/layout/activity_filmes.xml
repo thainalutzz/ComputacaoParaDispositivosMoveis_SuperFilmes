@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filmes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="412dp"
+        android:layout_height="76dp"
+        android:background="#FFEB3B"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Ação"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="#FFFFFF"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="#00FFFFFF"
+        android:text="O"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="653dp"
+        android:scrollbars="vertical"
+        tools:itemCount="50"
+        tools:layoutManager="GridLayoutManager"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:listitem="@layout/recycler_view_item"
+        tools:spanCount="5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
